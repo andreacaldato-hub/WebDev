@@ -1,0 +1,62 @@
+.youtube_button {
+  background-color: #CC0001;
+  color: white;
+  border: 1px none;
+  height: 36px;
+  width: 105px;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 8px;
+  transition: opacity 0.15s;
+
+
+}
+
+.youtube_button:hover {
+  opacity: 0.7;
+}
+
+.youtube_button:active {
+  opacity: 0.4;
+}
+
+.join_button {
+  background-color: white;
+  color: #1772C4;
+  border: 1px solid;
+  height: 36px;
+  width: 60px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 2px;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.join_button:hover {
+  background-color: #1772C4;
+  color: white;
+}
+
+.join_button:active {
+  opacity: 0.7;
+}
+
+.twitter_button {
+  background-color: rgb(2, 158, 255);
+  color: white;
+  font-weight: bold;
+  border: 1px none;
+  height: 38px;
+  width: 82px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 20px;
+  margin-left: 8px;
+  transition: box-shadow 0.15s;
+}
+
+.twitter_button:hover {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+
+}
