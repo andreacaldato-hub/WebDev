@@ -3,67 +3,32 @@
 
 <head>
   <title>Youtube.com Clone</title>
-  <style>
-    p {
-      font-family: Roboto, Arial;
-      margin-top: 0px;
-      margin-bottom: 0px;
-    }
-
-    .thumbnail {
-      width: 100%;
-    }
-
-    .search-bar {
-      display: block;
-    }
-
-    .video-title {
-      font-weight: 601;
-      width: 260px;
-      margin-top: 0px;
-      margin-bottom: 0px;
-      font-size: 14px;
-      line-height: 20px;
-      margin-bottom: 10px;
-    }
-
-    .thumbnail-row {
-      margin-bottom: 12px;
-    }
-
-
-    .video-author,
-    .video-stats {
-      font-size: 12px;
-      color: #4E5051;
-    }
-
-
-
-
-
-    .video-info-grid {
-      display: grid;
-      grid-template-columns: 50px 1fr;
-    }
-
-    .profile {
-      width: 40px;
-      border-radius: 50%;
-    }
-
-    .container {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      row-gap: 30px;
-      column-gap: 16px;
-    }
-  </style>
+  <link rel="stylesheet" href="style/video.css">
+  <link rel="stylesheet" href="style/header.css">
+  <link rel="stylesheet" href="style/general.css">
 </head>
 
 <body>
-  <input class="search-bar" type="text" placeholder="Search">
+  <div class="header">
+    <div class="left_sec">
+      <img class="hamburger-menu" src="icons/hamburger-menu.svg" alt="">
+      <img class="youtube-logo" src="icons/youtube-logo.svg" alt="">
+    </div>
+    <div class="mid_sec">
+      <input class="search_bar" type="text" name="" placeholder="Search">
+      <button class="search-button"> <img class="search-icon" src="icons/search.svg" alt=""></button>
+      <button class="voice-search-button"> <img class="voice-search-icon" src="icons/voice-search-icon.svg"
+          alt=""></button>
+
+    </div>
+    <div class="right_sec">
+      <img class="upload-icon" src="icons/upload.svg" alt="">
+      <img class="youtube-apps-icon" src="icons/youtube-apps.svg" alt="">
+      <img class="notifications-icon" src="icons/notifications.svg" alt="">
+      <img class="current-user-picture" src="profpict/my-channel.jpeg" alt="">
+    </div>
+
+  </div>
   <div class="container">
 
     <div class="video-preview">
