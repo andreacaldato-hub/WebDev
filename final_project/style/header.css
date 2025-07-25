@@ -3,6 +3,13 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: white;
+  border: 1px solid #DEDEDE;
+  z-index: 1000;
 }
 
 .left_sec {
@@ -47,6 +54,7 @@
 }
 
 .search-button {
+  position: relative;
   height: 38px;
   width: 66px;
   background-color: #F7F7F7;
@@ -55,17 +63,59 @@
   margin-left: -1px;
 }
 
+.search-button .tooltip {
+  background-color: rgba(96, 96, 96, 0.9);
+  color: white;
+  font-size: 12px;
+  padding: 8px;
+  border-radius: 2px;
+  position: absolute;
+  bottom: -50px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.search-button:hover .tooltip {
+  opacity: 1;
+}
+
+
+
 .search-icon {
   height: 25px;
   margin-top: 4px;
 }
 
 .voice-search-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 40px;
   width: 40px;
   border-radius: 50%;
   border: none;
   background-color: #F8F8F8;
+  position: relative;
+}
+
+.voice-search-button .tooltip {
+  background-color: rgba(96, 96, 96, 0.9);
+  color: white;
+  font-size: 12px;
+  padding: 8px;
+  border-radius: 2px;
+  position: absolute;
+  bottom: -48px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.voice-search-button:hover .tooltip {
+  opacity: 1;
 }
 
 .voice-search-icon {
@@ -82,9 +132,52 @@
   flex-shrink: 0;
 }
 
+
+.notifications-button {
+  background-color: rgb(204, 0, 0);
+  border-radius: 80px;
+  position: absolute;
+  top: 12px;
+  right: 70px;
+  color: white;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  padding: 1.5px 5px;
+  pointer-events: none;
+
+
+}
+
 .upload-icon {
   height: 24px;
 }
+
+.tooltip-container {
+  display: flex;
+  justify-content: center;
+}
+
+.tooltip-container .tooltip {
+  background-color: rgba(96, 96, 96, 0.9);
+  color: white;
+  font-size: 12px;
+  padding: 8px;
+  border-radius: 2px;
+  position: absolute;
+  bottom: -41px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.tooltip-container:hover .tooltip {
+  opacity: 1;
+}
+
 
 .youtube-apps-icon {
   height: 24px;

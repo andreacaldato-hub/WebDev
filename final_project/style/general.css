@@ -6,4 +6,9 @@ p {
 
 body {
   margin: 0px;
+  height: 2000px;
+  padding-top: 80px;
+  padding-left: 100px;
+  padding-right: 24px;
+  background-color: #F9F9F9;
 }
